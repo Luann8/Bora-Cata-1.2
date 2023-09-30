@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/Logo%20Bora%20Cat%C3%A1.ico?token=GHSAT0AAAAAACIBKKJ3ZG27JKHA7O2XTU3YZIVVEAQ" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Bora catá</title>
+</head>
+<body>
+   <style>
+                /* Estilos existentes permanecem inalterados */
+
+                body {
+            
+            margin: 0;
+            padding: 0;
+            background-color: #53667a;
+            color: #ffffff;
+            text-align: center;
+        }
+        
+                /* Dark mode styles */
+
+    .link{
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header {
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            padding: 300px 0;
+            height: 200px; /* Adjust the height as needed */
+            color: #fff;
+            animation: rotateBackground 12s linear infinite;
+            background-image: url("https://img.itch.zone/aW1hZ2UvMjIxOTEyMy8xMzEzMDgzMC5wbmc=/original/897%2FhX.png")
+    }
+
+
+        .footer {
+            background-color: #00942fa8; /* Cor de fundo do rodapé em branco */
+            padding: 10px 0;
+            color: #f8f8f8;
+            
+        }
+
+        h2{
+        text-align: center;
+        font-size: 27px;
+    }
+        
+        h1, p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        .container {
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                
+                .section {
+                    margin: 40px 0;
+                    text-align: left;
+                    padding: 20px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                }
+                
+                .section-heading {
+                    font-size: 28px;
+                    color: #007BFF;
+                    margin-bottom: 20px;
+                }
+                
+                /* Button Styles */
+                .animated-button {
+                    background-color: #007BFF;
+                    color: #fff;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    transition: background-color 0.3s ease;
+                }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            background-color: #02882cc0;
+            padding: 20px 30px;
+            border-radius: 5px;
+        }
+
+        .logo img {
+            max-width: 200px;
+        }
+
+
+        .box {
+            background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p2/681793-fundo-gradiente-verde-azul-com-listras-e-esferas-vetor.jpg");
+            border: 1px solid #000000;
+            padding: 20px;
+            margin: 20px;
+            display: cover;
+            box-shadow: 0 4px 6px rgba(32, 32, 32, 0.897);
+            transition: background-color 0.3s ease;
+        }
+
+        .box:hover {
+            background-color: #ddd;
+        }
+
+        .youtube-button {
+            display: inline-block;
+            background-color: #fc5858
+            
+            ; /* YouTube red */
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .youtube-button:hover {
+            background-color: #fa0404; /* Slightly darker red on hover */
+        }
+        
+        .band-members {
+            background-color: #b0d1a3;
+            padding: 20px;
+        }
+
+        .band-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .band-member-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+
+        .band-member {
+    justify-content: center;
+    align-items: center;
+}
+    
+#barra-de-links {
+    background-color: rgba(0, 102, 235, 0.521); /* Cor de fundo semitransparente */
+    backdrop-filter: blur(10px); /* Desfoque de 10px */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+#barra-de-links a {
+  color: #eee;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+}
+
+#barra-de-links a:hover {
+  background-color: #262627;
+width: 100px;
+}
+.animated-button {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Animação quando o mouse passa por cima */
+.animated-button:hover {
+  background-color: #003a12;
+}
+
+/* Content Box Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin: 40px 0;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-heading {
+    font-size: 28px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+    .slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide h2 {
+    color: #333;
+}
+
+.slide-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.slide-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Botões de navegação inferior */
+.slide-button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.slide-button img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-button:hover {
+    background-color: #555;
+}
+
+.section-heading {
+    font-size: 28px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.speaker {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.speaker-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.speaker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.speaker-info {
+    flex: 1;
+color:#000000;
+}
+
+
+.contact {
+            background-color: #4e2edd00;
+            padding: 40px 0;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+
+</style>
+    <header>
+        <section id="menu">  
+        <id class="logo">
+        </header>        
+    </div>
+    <nav>
+</body>            
+</div>
+<nav>
+    <div id="barra-de-links" class="sticky">
+        <ul>
+            <li><a href="#menu">Sobre</a></li>
+            <li><a href="#dow">Download</a></li>
+            <li><a href="#img">Imagens</a></li>
+            <li><a href="#lect">Informações</a></li>
+            <li><a href="#band-members">Desenvolvedor</a></li>
+        </ul>
+    </div>
+</nav>
+<nav>
+    
+    <div class="box">
+                <img src="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/Logo%20Bora%20Cat%C3%A1.png?token=GHSAT0AAAAAACIBKKJ3BH7SLW2Q3K2PBB76ZIVVFPQ" height="98" width="128" > 
+    <h1>#boracatá e se juntar a esta missão!</h1>
+        
+    
+    <p>Navegue pelo quintal, pelo bairro e pelo bosque coletando lixos espalhados e transforme cada canto em um lugar mais limpo e verde. 
+            
+            <p>A cada item coletado e depositado corretamente, você não só acumula pontos, mas também faz sua parte pelo planeta.</p>
+            
+        </div>
+        <nav>
+        <div class="box">
+            <section id="img">
+                        <h2>Confira nosso jogo</h2>
+                        <hr>
+                        <div class="slideshow-container">
+                            <div class="slide fade">
+                                <h2 style="color:floralwhite;">Menu</h2>                    
+                                <img src="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/tela%20menu%20inicial.png?token=GHSAT0AAAAAACIBKKJ3A75VRVX3HIUIDLXSZIVVEPA"; alt="Imagem 1" height="512" width="920" class="slide-image">
+                    <a class="prev slide-buttons" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next slide-buttons" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+                <!-- Repita o mesmo padrão para outras imagens do slideshow -->
+                <div class="slide fade">
+                    <h2 style="color:floralwhite;">Seleção de personagem:</h2>
+                    <img src="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/tela%20de%20escolha%20de%20personagem.png?token=GHSAT0AAAAAACIBKKJ3QPJ67KO3NN77DJ56ZIVVEKQ" alt="Imagem 2"  height="512" width="920" class="slide-image">
+                    <a class="prev slide-buttons" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next slide-buttons" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+    
+                        <div class="slide fade">
+                            <h2 style="color:floralwhite;">Missões:</h2>
+                    <img src="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/tela%20de%20pausa%20papel.png" alt="Imagem 3" height="512" width="920" class="slide-image">
+                    <a class="prev slide-buttons" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next slide-buttons" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+    
+                    <div class="slide fade">
+                        <h2 style="color:floralwhite;">Gráficos:</h2>
+                    <img src="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/gameplay%20fase%201.png?token=GHSAT0AAAAAACIBKKJ3AT4PGKZXW76N6CEUZIVVELQ" alt="Imagem 4"height="512" width="920"class="slide-image">
+                    <a class="prev slide-buttons" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next slide-buttons" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+            </div>
+        </section>
+            
+        <div style="text-align: center;">
+                <img src="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/tela%20menu%20inicial.png?token=GHSAT0AAAAAACIBKKJ3A75VRVX3HIUIDLXSZIVVEPA" alt="Imagem 1" height="64" width="120">
+                <img src="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/tela%20de%20escolha%20de%20personagem.png?token=GHSAT0AAAAAACIBKKJ3QPJ67KO3NN77DJ56ZIVVEKQ" alt="Imagem 2" height="64" width="120">
+                <img src="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/tela%20de%20pausa%20papel.png" alt="Imagem 3" height="64" width="120">
+                <img src="https://raw.githubusercontent.com/Luann8/Bora-Cata/main/gameplay%20fase%201.png?token=GHSAT0AAAAAACIBKKJ3AT4PGKZXW76N6CEUZIVVELQ" alt="Imagem 4" height="64" width="120">
+
+            </div>
+        </nav>    
+        </div>
+    </div>
+        <div class= "box">
+            
+            <h2> O jogo não é apenas ganhar, é cuidar do nosso mundo!</h2>
+        <p>Colete os items listados</p>
+   
+        <p>Corra contrá o tempo</p>
+        
+        <p>Aprenda,divirta-se e faça a diferença!</p>
+
+        </div>            
+    </div>
+            <div class="box">
+        <section id="dow">
+        <h2> instruções de instalação</h2>
+    <P>1. Baixe o arquivo BoraCatá.zip;</P>
+        
+<P>2. Descompacte em alguma pasta de sua preferência;</P>
+        
+<P>3. Dentor da pasta onde descompactou o jogo, execute o BoraCata.exe</P>
+        
+<P>4. Divirta-se!</P>
+
+<a href="https://boracata.itch.io/bora" class="youtube-button" target="_blank">
+    <i class="fab fa-youtube"></i>D O W L O A D
+</a>
+</div>
+   
+   <div class="box">
+    <section id="lect">
+    
+        <h2>Informações</h2>
+        <body>
+            <div class="container">
+                <div class="section">
+                    
+                    <div class="speaker">
+                        <div class="speaker-image">
+                            <img src="https://media.istockphoto.com/vectors/calendar-silhouette-icon-schedule-icon-vector-vector-id1372639963?k=20&m=1372639963&s=170667a&w=0&h=8uI8PhgLJMg7wX390AnNeRmeAiLH6HzcYg4aRduCcGo=" alt="Palestrante 1">
+                        </div>
+                        <div class="speaker-info">
+                            <h3>lançadomento:</h3>
+                            <p>18 de agosto 2023</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="speaker">
+                        <div class="speaker-image">
+                            <img src="https://ssb.wiki.gallery/images/7/7c/ButtonIcon-N64-D-Pad.svg" alt="Palestrante 2">
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Genero:</h3>
+                            <p>Educacional</p>
+                        </div>
+                                
+                                </div>
+                                <hr>
+
+                                <div class="speaker">
+                                    <div class="speaker-image">
+                                        <img src="https://th.bing.com/th/id/OIP._NbF6SXkJP_Lai3NNdkGOgHaHa?pid=ImgDet&rs=1" alt="Palestrante 2">
+                                    </div>
+                                    <div class="speaker-info">
+                                        <h3>Tamanho do arquivo do jogo:</h3>
+                                        <p>51 mb.zip</p>
+                                    </div>
+                                    </div>
+                                        <hr>
+                                            <div class="speaker">
+                                                <div class="speaker-image">
+                                                    <img src="https://static.vecteezy.com/system/resources/previews/000/566/995/large_2x/vector-person-icon.jpg" alt="Palestrante 1">
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h3>Número de jogadores</h3>
+                                                    <p>Um único console (1)</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="speaker">
+                                                <div class="speaker-image">
+                                                    <img src="https://media.istockphoto.com/vectors/translation-icon-vector-design-template-in-white-background-vector-id1434074366?k=20&m=1434074366&s=170667a&w=0&h=sDb0urZeJ_048qzeysSARJirevYaNvHsfOmYr575a-8=" alt="Palestrante 2">
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h3>Idiomas compatívei:</h3>
+                                                    <p>Português</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    </div>
+                    
+    <div class="box">
+        <section id="lect">
+        
+            <h2>Classificação didatica</h2>
+            <body>
+                <div class="container">
+                    <div class="section">
+                        
+                        <div class="speaker">
+                            <div class="speaker-image">
+                                <img src="https://th.bing.com/th/id/R.10881df11b5a0d3c11de39b1f673d939?rik=8%2bbU3Wn%2b4yUNFQ&riu=http%3a%2f%2frpst.trck101.mpstb.net.br%2frepositorio%2fpalasathena2%2fclassificacao_livre.png&ehk=V0qgFT97C17X3e%2b5%2fEQCZH1M0kGW1eW8u88h2JO6X7g%3d&risl=&pid=ImgRaw&r=0" alt="Palestrante 1">
+                            </div>
+                            <div class="speaker-info">
+                                <h2 >Categoria</h2>
+                                                                <p>Livre para todos os públicos</p>
+                            </div>
+                        </div>
+                    </div>
+</div>
+</div>
+</div>
+
+</div>
+<div>
+<section class="box">
+            <section id="band-members">
+                <h2>Desenvolvedor do jogo</h2>
+                <div class="band-member">
+                    <div class="band-member-image">
+                      <img src="https://avatars.githubusercontent.com/u/95255704?v=4" height="100"width="100" >
+                    </div>
+                    <p><strong>Caio Jannuzzi</strong></p>
+                  </div>
+               <p>Aluno de Análise e Desenvolvimento de Sistemas na Universidade de Vassouras. </p>
+                <p>Sou apaixonado por tecnologia, educação e empreendedorismo. </p>
+                <p>Sempre gostei bastante de lógica e a curiosidade em saber como é o funcionamento das coisas me levou a área de tecnologia.</p>
+            
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>    
+
+</div>
+
+<div class="footer">  
+        <p>&copy; 2023</p>
+        <script>
+                   let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let slides = document.querySelectorAll(".slide");
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 2000);
+                }
+
+                function changeSlide(n) {
+                    slideIndex += n;
+                    let slides = document.querySelectorAll(".slide");
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                    }
+                    if (slideIndex < 1) {
+                        slideIndex = slides.length;
+                    }
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                }
+            $(document).ready(function() {
+              // Obtém a posição do texto
+              var texto = $("#slideshow");
+              var posicao = texto.offset();
+          
+              // Define a posição da barra de links
+              $("#barra-de-links").css("top", posicao.top + texto.height());
+            });
+        </script>
+    </section>    
+</body>
+    </html>
