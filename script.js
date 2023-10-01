@@ -1,5 +1,4 @@
-<body>
-<head>
+
 
 let slideIndex = 0;
 showSlides();
@@ -41,5 +40,4 @@ $("#barra-de-links").css("top", posicao.top + texto.height());
 });
 
 )
-    </body>
-    </head>
+
