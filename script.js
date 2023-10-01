@@ -1,3 +1,5 @@
+<style>
+
 let slideIndex = 0;
 showSlides();
 
@@ -36,3 +38,5 @@ var posicao = texto.offset();
 // Define a posição da barra de links
 $("#barra-de-links").css("top", posicao.top + texto.height());
 });
+
+</style>
