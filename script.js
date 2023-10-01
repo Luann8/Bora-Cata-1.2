@@ -39,5 +39,4 @@ var posicao = texto.offset();
 $("#barra-de-links").css("top", posicao.top + texto.height());
 });
 
-)
 
